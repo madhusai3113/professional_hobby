@@ -1,0 +1,11 @@
+{% extends 'baseapp/base_template.html' %}
+
+{% block content %}
+
+    {% for user in users %}
+        <div class="well well-info">
+            <a href="{{user}}">{{ user }}</a> <a href="/connect/{{user}}"><button class="btn btn-success">Connect</button></a>
+        </div>
+    {% endfor %}
+
+{% endblock %}
